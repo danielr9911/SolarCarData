@@ -1,4 +1,4 @@
-package com.mycompany.solarcardata;
+package co.edu.eafit.solarcardata;
 
 
 import java.util.concurrent.TimeUnit;
