@@ -22,8 +22,8 @@ import org.influxdb.dto.Query;
 public class Ejemplo {
     public static void main(String[] args){
         InfluxDB influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "root");
-        String dbName = "aTimeSeries";
-        influxDB.createDatabase(dbName);
+        String dbName = "otroEjemplo";
+        //influxDB.createDatabase(dbName);
 
         BatchPoints batchPoints = BatchPoints
                 .database(dbName)
