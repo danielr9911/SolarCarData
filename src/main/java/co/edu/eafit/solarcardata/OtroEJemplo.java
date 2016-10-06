@@ -22,11 +22,11 @@ public class OtroEJemplo {
     public static void main(String[] args){
         InfluxDB influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "root");
         String dbName = "grafana";
-        influxDB.createDatabase(dbName);
+        //influxDB.createDatabase(dbName);
         // Flush every 2000 Points, at least every 100ms
         influxDB.enableBatch(2000, 100, TimeUnit.MILLISECONDS);
         
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 200; i++){
             float minX = 50.0f;
             float maxX = 100.0f;
             Random randomVol = new Random();
