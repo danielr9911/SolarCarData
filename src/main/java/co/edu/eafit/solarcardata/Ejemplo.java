@@ -8,11 +8,8 @@ package co.edu.eafit.solarcardata;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.influxdb.InfluxDB;
-import org.influxdb.InfluxDB.ConsistencyLevel;
 import org.influxdb.InfluxDBFactory;
-import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
-import org.influxdb.dto.Query;
 
 /**
  *
