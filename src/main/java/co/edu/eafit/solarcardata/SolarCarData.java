@@ -4,10 +4,15 @@
  * and open the template in the editor.
  */
 package co.edu.eafit.solarcardata;
+
 /**
  *
  * @author Daniel
  */
-public class Serial {
-    
+public class SolarCarData {
+    public static void main(String[] args){
+        Conexion conexion = new Conexion();
+        conexion.conectar();
+        conexion.ingresarDato("Ejemplo", "Dato1", 6.5f);
+    }
 }
