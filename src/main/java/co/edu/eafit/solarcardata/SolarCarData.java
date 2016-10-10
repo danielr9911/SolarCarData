@@ -15,6 +15,9 @@ public class SolarCarData {
         //conexion.conectar();
         //conexion.ingresarDato("Ejemplo", "Dato1", 6.5f);
         Serial serial = new Serial();
-        serial.puertosDisponibles();
+        System.out.println("Listar Puertos:");
+        serial.listarPuertos();
+        //System.out.println("Puertos Disponibles:");
+        //serial.puertosDisponibles();
     }
 }
