@@ -11,8 +11,10 @@ package co.edu.eafit.solarcardata;
  */
 public class SolarCarData {
     public static void main(String[] args){
-        Conexion conexion = new Conexion();
-        conexion.conectar();
-        conexion.ingresarDato("Ejemplo", "Dato1", 6.5f);
+        //Conexion conexion = new Conexion();
+        //conexion.conectar();
+        //conexion.ingresarDato("Ejemplo", "Dato1", 6.5f);
+        Serial serial = new Serial();
+        serial.puertosDisponibles();
     }
 }
