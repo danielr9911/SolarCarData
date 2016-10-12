@@ -12,7 +12,68 @@ import java.util.*;
  * @author Daniel
  */
 public class Serial {
-   public void listarPuertos()
+   public void conectar(String puerto) throws Exception{
+        CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier(puerto);
+        if ( portIdentifier.isCurrentlyOwned() )
+        {
+            System.out.println("Error: El puerto esta actualmente en uso");
+        }
+        else
+        {
+            CommPort commPort = portIdentifier.open(this.getClass().getName(),2000);
+            if ( commPort instanceof SerialPort )
+            {
+                SerialPort serialPort = (SerialPort) commPort;
+                serialPort.setSerialPortParams(38400,SerialPort.DATABITS_8,SerialPort.STOPBITS_1,SerialPort.PARITY_NONE);
+                System.out.println("InputStream");
+                InputStream in = serialPort.getInputStream();
+                serialPort.addEventListener(new SerialReader(in));
+                serialPort.notifyOnDataAvailable(true);
+                System.out.println("Termina");
+                //OutputStream out = serialPort.getOutputStream();
+                //(new Thread(new SerialWriter(out))).start();
+
+            }
+            else
+            {
+                System.out.println("Error: El puerto especificado no es un puerto serial");
+            }
+        }
+    }
+    private class SerialReader implements SerialPortEventListener 
+    {
+        private InputStream in;
+        private byte[] buffer = new byte[1024];
+        
+        public SerialReader ( InputStream in )
+        {
+            this.in = in;
+        }
+        
+        public void serialEvent(SerialPortEvent arg0) {
+            int data;
+          
+            try
+            {
+                int len = 0;
+                while ( ( data = in.read()) > -1 )
+                {
+                    if ( data == '\n' ) {
+                        break;
+                    }
+                    buffer[len++] = (byte) data;
+                }
+                System.out.print(new String(buffer,0,len));
+            }
+            catch ( IOException e )
+            {
+                e.printStackTrace();
+                System.exit(-1);
+            }             
+        }
+
+    }
+    public void listarPuertos()
     {
         java.util.Enumeration<CommPortIdentifier> portEnum = CommPortIdentifier.getPortIdentifiers();
         while ( portEnum.hasMoreElements() ) 
