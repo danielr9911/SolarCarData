@@ -13,8 +13,8 @@ import org.influxdb.dto.Point;
  * @author Daniel
  */
 public class Conexion {
-    InfluxDB influxDB;
-    String dbName;
+    private static InfluxDB influxDB;
+    private static String dbName;
     
     public void conectar(){
         influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "root");
@@ -32,7 +32,7 @@ public class Conexion {
         influxDB.write(dbName, "autogen", point1);
     }
     
-    public void guardar(Dato dato){
+    public static void guardar(Dato dato){
         if(dato instanceof Ambiental){
             Point point1 = Point.measurement("Ambiental")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
