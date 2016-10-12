@@ -8321,3 +8321,86 @@ t=2016-10-12T09:54:49-0500 lvl=info msg="Request Completed" logger=context userI
 t=2016-10-12T09:54:49-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=502 remote_addr=[::1] time_ns=15ns size=0
 t=2016-10-12T09:54:49-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=502 remote_addr=[::1] time_ns=14ns size=0
 t=2016-10-12T09:54:49-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=502 remote_addr=[::1] time_ns=16ns size=0
+t=2016-10-12T10:54:14-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=unknown-dev compiled=2016-09-26T16:56:19-0500
+t=2016-10-12T10:54:14-0500 lvl=info msg="Config loaded from" logger=settings file=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/conf/defaults.ini
+t=2016-10-12T10:54:14-0500 lvl=info msg="Path Home" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1
+t=2016-10-12T10:54:14-0500 lvl=info msg="Path Data" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data
+t=2016-10-12T10:54:14-0500 lvl=info msg="Path Logs" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data/log
+t=2016-10-12T10:54:14-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-10-12T10:54:14-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-10-12T10:54:14-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-10-12T10:54:14-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-10-12T10:54:14-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-10-12T11:11:38-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/images/stickman.gif status=404 remote_addr=[::1] time_ns=3ns size=19
+t=2016-10-12T11:17:13-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=6ns size=19
+t=2016-10-12T11:17:52-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=3ns size=19
+t=2016-10-12T11:17:56-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=1ns size=19
+t=2016-10-12T11:18:32-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/Documents/SolarCarDatalogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:19:19-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/Documents/SolarCarData/grafana-3.1.1/logoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:21:00-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=2ns size=19
+t=2016-10-12T11:21:05-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:24:06-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:25:39-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=7ns size=19
+t=2016-10-12T11:25:52-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logoLaura.png status=404 remote_addr=[::1] time_ns=1ns size=19
+t=2016-10-12T11:26:38-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:26:41-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:27:23-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:27:32-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=1ns size=19
+t=2016-10-12T11:28:48-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/grafana-3.1.1/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:28:52-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/grafana-3.1.1/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T11:32:37-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=11ns size=19
+t=2016-10-12T11:32:41-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=1ns size=19
+t=2016-10-12T11:33:00-0500 lvl=info msg="Received signal [interrupt]. shutting down"
+t=2016-10-12T12:32:10-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=unknown-dev compiled=2016-09-26T16:56:19-0500
+t=2016-10-12T12:32:10-0500 lvl=info msg="Config loaded from" logger=settings file=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/conf/defaults.ini
+t=2016-10-12T12:32:10-0500 lvl=info msg="Path Home" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1
+t=2016-10-12T12:32:10-0500 lvl=info msg="Path Data" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data
+t=2016-10-12T12:32:10-0500 lvl=info msg="Path Logs" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data/log
+t=2016-10-12T12:32:10-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-10-12T12:32:10-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-10-12T12:32:10-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-10-12T12:32:10-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-10-12T12:32:10-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-10-12T12:34:36-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=3ns size=19
+t=2016-10-12T14:02:04-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=unknown-dev compiled=2016-09-26T16:56:19-0500
+t=2016-10-12T14:02:04-0500 lvl=info msg="Config loaded from" logger=settings file=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/conf/defaults.ini
+t=2016-10-12T14:02:04-0500 lvl=info msg="Path Home" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1
+t=2016-10-12T14:02:04-0500 lvl=info msg="Path Data" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data
+t=2016-10-12T14:02:04-0500 lvl=info msg="Path Logs" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data/log
+t=2016-10-12T14:02:04-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-10-12T14:02:04-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-10-12T14:02:04-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-10-12T14:02:04-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-10-12T14:02:04-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-10-12T14:03:28-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T15:17:44-0500 lvl=info msg="Received signal [interrupt]. shutting down"
+t=2016-10-12T15:17:46-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=unknown-dev compiled=2016-09-26T16:56:19-0500
+t=2016-10-12T15:17:46-0500 lvl=info msg="Config loaded from" logger=settings file=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/conf/defaults.ini
+t=2016-10-12T15:17:46-0500 lvl=info msg="Path Home" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1
+t=2016-10-12T15:17:46-0500 lvl=info msg="Path Data" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data
+t=2016-10-12T15:17:46-0500 lvl=info msg="Path Logs" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data/log
+t=2016-10-12T15:17:46-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-10-12T15:17:46-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-10-12T15:17:46-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-10-12T15:17:46-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-10-12T15:17:46-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-10-12T16:49:36-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=unknown-dev compiled=2016-09-26T16:56:19-0500
+t=2016-10-12T16:49:36-0500 lvl=info msg="Config loaded from" logger=settings file=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/conf/defaults.ini
+t=2016-10-12T16:49:36-0500 lvl=info msg="Path Home" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1
+t=2016-10-12T16:49:36-0500 lvl=info msg="Path Data" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data
+t=2016-10-12T16:49:36-0500 lvl=info msg="Path Logs" logger=settings path=/Users/Lauramv21/Documents/SolarCarData/grafana-3.1.1/data/log
+t=2016-10-12T16:49:36-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-10-12T16:49:36-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-10-12T16:49:36-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-10-12T16:49:36-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-10-12T16:49:36-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-10-12T16:49:43-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=1ns size=19
+t=2016-10-12T16:49:48-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T16:50:18-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=6ns size=103
+t=2016-10-12T16:54:54-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=3ns size=19
+t=2016-10-12T16:58:43-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=0s size=19
+t=2016-10-12T17:16:42-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=4ns size=19
+t=2016-10-12T17:17:13-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=6ns size=19
+t=2016-10-12T17:17:52-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=3ns size=19
+t=2016-10-12T17:24:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/LogoLaura.png status=404 remote_addr=[::1] time_ns=6ns size=19
+t=2016-10-12T17:31:59-0500 lvl=info msg="Received signal [interrupt]. shutting down"

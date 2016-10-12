@@ -18,35 +18,53 @@ import org.influxdb.dto.Point;
 public class Ejemplo {
     public static void main(String[] args){
         InfluxDB influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "root");
-        String dbName = "grafana";
-        //influxDB.createDatabase(dbName);
+        String dbName = "SolarCar";
+        influxDB.createDatabase(dbName);
         // Flush every 2000 Points, at least every 100ms
         influxDB.enableBatch(2000, 100, TimeUnit.MILLISECONDS);
         
-        while(true){
-            float minX = 50.0f;
-            float maxX = 100.0f;
-            Random randomVol = new Random();
-            float voltaje = randomVol.nextFloat() * (maxX - minX) + minX;
-            Random randomCor = new Random();
-            float corriente = randomCor.nextFloat() * (maxX - minX) + minX;
-            Random randomPot = new Random();
-            float potencia = randomPot.nextFloat() * (maxX - minX) + minX;
-            Point point1 = Point.measurement("Motor")
-                        .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                        .addField("Voltaje", voltaje)
-                        .addField("Corriente", corriente)
-                        .addField("Potencia", potencia)
-                        .build();
-            
-            influxDB.write(dbName, "autogen", point1);
-            
-            try {
-                Thread.sleep(1000);                 //1000 milliseconds is one second.
-            } catch(InterruptedException ex) {
-                Thread.currentThread().interrupt();
-            }
+        Point point1 = Point.measurement("Motor")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("corriente", 1.5)
+                    .addField("voltaje", 1.5)
+                    .addField("temperatura", 1.5)
+                    .build();
+           
+        Point point2 = Point.measurement("Ambiental")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("temperatura", 1.5)
+                    .addField("radiacion", 1.5)
+                    .addField("magViento", 1.5)
+                    .addField("dirViento", "NE")
+                    .build();
+        
+        Point point3 = Point.measurement("Panel")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("corriente", 1.5)
+                    .addField("voltaje", 1.5)
+                    .addField("potencia", 1.5)
+                    .build();
+        
+        Point point4 = Point.measurement("Bateria")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("soc", 1.5)
+                    .addField("voltaje", 1.5)
+                    .addField("corriente", 1.5)
+                    .build();
+        
+        
+        Point point5 = Point.measurement("General")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("velocidad", 1.5)
+                    .addField("distancia", 1.5)
+                    .build();
+   
+        influxDB.write(dbName, "autogen", point1);
+        influxDB.write(dbName, "autogen", point2);
+        influxDB.write(dbName, "autogen", point3);
+        influxDB.write(dbName, "autogen", point4);
+        influxDB.write(dbName, "autogen", point5);
                 
         }
     }
-}
+
