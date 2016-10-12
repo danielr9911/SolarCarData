@@ -63,7 +63,9 @@ public class Serial {
                     }
                     buffer[len++] = (byte) data;
                 }
-                System.out.print(new String(buffer,0,len));
+                String linea = new String(buffer,0,len);
+                System.out.print(linea);
+                Interpretador.reconocer(linea);
             }
             catch ( IOException e )
             {

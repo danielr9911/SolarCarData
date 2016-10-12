@@ -10,5 +10,5 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Interpretador {
-    
+    public static 
 }

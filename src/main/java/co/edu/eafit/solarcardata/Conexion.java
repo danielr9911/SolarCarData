@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package co.edu.eafit.solarcardata;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.influxdb.InfluxDB;
 import org.influxdb.InfluxDBFactory;
@@ -31,5 +30,52 @@ public class Conexion {
                     .addField(nCampo1, vCampo1)
                     .build();
         influxDB.write(dbName, "autogen", point1);
+    }
+    
+    public void guardar(Dato dato){
+        if(dato instanceof Ambiental){
+            Point point1 = Point.measurement("Ambiental")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("temperatura", ((Ambiental) dato).temperatura)
+                    .addField("radiacion", ((Ambiental) dato).radiacion)
+                    .addField("dirViento", ((Ambiental) dato).dirViento)
+                    .addField("magViento", ((Ambiental) dato).magViento)
+                    .build();
+            influxDB.write(dbName, "autogen", point1);
+        }else if(dato instanceof Panel){
+            Point point1 = Point.measurement("Panel")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("corriente", ((Panel) dato).corriente)
+                    .addField("voltaje", ((Panel) dato).voltaje)
+                    .addField("potencia", ((Panel) dato).potencia)
+                    .build();
+            influxDB.write(dbName, "autogen", point1);
+        }else if(dato instanceof Motor){
+            Point point1 = Point.measurement("Motor")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("corriente", ((Motor) dato).corriente)
+                    .addField("voltaje", ((Motor) dato).voltaje)
+                    .addField("temperatura", ((Motor) dato).temperatura)
+                    .build();
+            influxDB.write(dbName, "autogen", point1);
+        }else if(dato instanceof Bateria){
+            Point point1 = Point.measurement("Bateria")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("soc", ((Bateria) dato).soc)
+                    .addField("voltaje", ((Bateria) dato).voltaje)
+                    .addField("corriente", ((Bateria) dato).corriente)
+                    .build();
+            influxDB.write(dbName, "autogen", point1);
+        }else if(dato instanceof General){
+            Point point1 = Point.measurement("General")
+                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("velocidad", ((General) dato).velocidad)
+                    .addField("distancia", ((General) dato).distancia)
+                    .build();
+            influxDB.write(dbName, "autogen", point1);
+        }else{
+            //Error
+            System.out.println("El dato a guardar es un tipo de dato desconocido");
+        }
     }
 }
