@@ -10,11 +10,11 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Panel extends Dato{
-    public float corriente;
-    public float voltaje;
-    public float potencia;
+    public double corriente;
+    public double voltaje;
+    public double potencia;
     
-    public Panel(float corriente, float voltaje, float potencia){
+    public Panel(double corriente, double voltaje, double potencia){
         this.corriente=corriente;
         this.voltaje=voltaje;
         this.potencia=potencia;

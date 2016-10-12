@@ -10,10 +10,10 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class General extends Dato{
-    public float velocidad;
-    public float distancia;
+    public double velocidad;
+    public double distancia;
     
-    public General(float velocidad, float distancia){
+    public General(double velocidad, double distancia){
         this.velocidad=velocidad;
         this.distancia=distancia;
     }

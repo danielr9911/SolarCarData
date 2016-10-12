@@ -10,11 +10,11 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Bateria extends Dato{
-    public float soc;
-    public float voltaje;
-    public float corriente;
+    public double soc;
+    public double voltaje;
+    public double corriente;
     
-    public Bateria(float soc,float voltaje,float corriente){
+    public Bateria(double soc,double voltaje,double corriente){
         this.soc=soc;
         this.voltaje=voltaje;
         this.corriente=corriente;

@@ -10,11 +10,11 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Motor extends Dato{
-    public float corriente;
-    public float voltaje;
-    public float temperatura;
+    public double corriente;
+    public double voltaje;
+    public double temperatura;
     
-    public Motor(float corriente, float voltaje, float temperatura){
+    public Motor(double corriente, double voltaje, double temperatura){
         this.corriente=corriente;
         this.voltaje=voltaje;
         this.temperatura=temperatura;

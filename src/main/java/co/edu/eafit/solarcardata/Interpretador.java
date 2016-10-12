@@ -27,30 +27,28 @@ public class Interpretador {
         
         if(tipo.equals("a")){
             double temperatura = Double.parseDouble(arr[1])/10;
-            System.out.println("tempSC---->"+arr[1]);
-            System.out.println("temp---->"+temperatura);
-            float radiacion = Integer.parseInt(arr[2])/10;
+            double radiacion = Double.parseDouble(arr[2])/10;
             String dirViento = arr[3];
-            float magViento = Integer.parseInt(arr[4])/10;
-            dato = new Ambiental(temperatura, radiacion, magViento, dirViento);                    
+            double magViento = Double.parseDouble(arr[4])/10;
+            dato = new Ambiental(temperatura, radiacion, magViento, dirViento);
         }else if(tipo.equals("p")){
-            float corriente = Integer.parseInt(arr[1])/10;
-            float voltaje = Integer.parseInt(arr[2])/10;
-            float potencia = Integer.parseInt(arr[3])/10;
+            double corriente = Double.parseDouble(arr[1])/10;
+            double voltaje = Double.parseDouble(arr[2])/10;
+            double potencia = Double.parseDouble(arr[3])/10;
             dato = new Panel(corriente, voltaje, potencia);
         }else if(tipo.equals("m")){
-            float corriente = Integer.parseInt(arr[1])/10;
-            float voltaje = Integer.parseInt(arr[2])/10;
-            float temperatura = Integer.parseInt(arr[3])/10;
+            double corriente = Double.parseDouble(arr[1])/10;
+            double voltaje = Double.parseDouble(arr[2])/10;
+            double temperatura = Double.parseDouble(arr[3])/10;
             dato = new Motor(corriente, voltaje, temperatura);
         }else if(tipo.equals("b")){
-            float soc = Integer.parseInt(arr[1])/10;
-            float voltaje = Integer.parseInt(arr[2])/10;
-            float corriente = Integer.parseInt(arr[3])/10;
+            double soc = Double.parseDouble(arr[1])/10;
+            double voltaje = Double.parseDouble(arr[2])/10;
+            double corriente = Double.parseDouble(arr[3])/10;
             dato = new Bateria(soc, voltaje, corriente);
         }else if(tipo.equals("g")){
-            float velocidad = Integer.parseInt(arr[1])/10;
-            float distancia = Integer.parseInt(arr[2])/10;
+            double velocidad = Double.parseDouble(arr[1])/10;
+            double distancia = Double.parseDouble(arr[2])/10;
             dato = new General(velocidad, distancia);
         }
         if(dato != null){
