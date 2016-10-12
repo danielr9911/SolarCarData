@@ -19,8 +19,9 @@ public class SolarCarData {
         serial.listarPuertos();
         //System.out.println("Puertos Disponibles:");
         //serial.puertosDisponibles();
+        Conexion.conectar();
         try{
-            serial.conectar("COM6");
+            serial.conectar("COM4");
         }catch ( Exception e ){
             // TODO Auto-generated catch block
             e.printStackTrace();

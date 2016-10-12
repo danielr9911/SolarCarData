@@ -16,12 +16,13 @@ public class Conexion {
     private static InfluxDB influxDB;
     private static String dbName;
     
-    public void conectar(){
+    public static void conectar(){
         influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "root");
         dbName = "SolarCar";
         influxDB.createDatabase(dbName);
         // Flush every 2000 Points, at least every 100ms
         influxDB.enableBatch(2000, 100, TimeUnit.MILLISECONDS);
+        System.out.println("Connecting..");
     }
     
     public void ingresarDato(String tabla, String nCampo1, float vCampo1){
@@ -42,6 +43,7 @@ public class Conexion {
                     .addField("magViento", ((Ambiental) dato).magViento)
                     .build();
             influxDB.write(dbName, "autogen", point1);
+            System.out.println("Se encontro intancia ambiental");
         }else if(dato instanceof Panel){
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -50,6 +52,7 @@ public class Conexion {
                     .addField("potencia", ((Panel) dato).potencia)
                     .build();
             influxDB.write(dbName, "autogen", point1);
+            System.out.println("Se encontro intancia panel");
         }else if(dato instanceof Motor){
             Point point1 = Point.measurement("Motor")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -58,6 +61,7 @@ public class Conexion {
                     .addField("temperatura", ((Motor) dato).temperatura)
                     .build();
             influxDB.write(dbName, "autogen", point1);
+            System.out.println("Se encontro intancia motor");
         }else if(dato instanceof Bateria){
             Point point1 = Point.measurement("Bateria")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -66,6 +70,7 @@ public class Conexion {
                     .addField("corriente", ((Bateria) dato).corriente)
                     .build();
             influxDB.write(dbName, "autogen", point1);
+            System.out.println("Se encontro intancia bateria");
         }else if(dato instanceof General){
             Point point1 = Point.measurement("General")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -73,6 +78,7 @@ public class Conexion {
                     .addField("distancia", ((General) dato).distancia)
                     .build();
             influxDB.write(dbName, "autogen", point1);
+            System.out.println("Se encontro intancia general");
         }else{
             //Error
             System.out.println("El dato a guardar es un tipo de dato desconocido");
