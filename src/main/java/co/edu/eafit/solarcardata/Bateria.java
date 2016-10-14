@@ -26,12 +26,16 @@ public class Bateria extends Dato{
     public double celltemp2;
     public double celltemp3;
     public double celltemp4;
+    public double socma;
+    public double voltage;
+    public double current;
     
     public Bateria(double cmutmax, double socpercent, double cellvmin,
             double cellvmax, double celltmax, double flagsb, double pcbtemp0,
             double pcbtemp1, double pcbtemp2, double pcbtemp3, double pcbtemp4,
             double celltemp0, double celltemp1, double celltemp2,
-            double celltemp3, double celltemp4){
+            double celltemp3, double celltemp4, double socma, double voltage,
+            double current){
         this.cmutmax=cmutmax;
         this.socpercent = socpercent;
         this.cellvmin = cellvmin;
@@ -48,6 +52,9 @@ public class Bateria extends Dato{
         this.celltemp2 = celltemp2;
         this.celltemp3 = celltemp3;
         this.celltemp4 = celltemp4;
+        this.socma = socma;
+        this.voltage = voltage;
+        this.current = current;
         
     }
 }
