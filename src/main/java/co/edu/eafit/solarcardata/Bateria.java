@@ -10,13 +10,10 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Bateria extends Dato{
-    public double soc;
-    public double voltaje;
-    public double corriente;
+    public double cmutmax;
     
-    public Bateria(double soc,double voltaje,double corriente){
-        this.soc=soc;
-        this.voltaje=voltaje;
-        this.corriente=corriente;
+    public Bateria(double cmutmax ){
+        this.cmutmax=cmutmax;
+        
     }
 }
