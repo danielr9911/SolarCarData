@@ -10,15 +10,9 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Ambiental extends Dato{
-    public double temperatura;
-    public double radiacion;
-    public double magViento;
-    public String dirViento;
+    public double 
     
-    public Ambiental(double temperatura, double radiacion, double magViento, String dirViento){
-        this.temperatura=temperatura;
-        this.radiacion=radiacion;
-        this.magViento=magViento;
-        this.dirViento=dirViento;
+    public Ambiental(double ){
+        this.
     }
 }
