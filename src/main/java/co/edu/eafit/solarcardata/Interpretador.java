@@ -53,41 +53,47 @@ public class Interpretador {
         
         //para sacar mvoltaje -> data.get("mvoltaje")      
        
-        //System.out.print("linea: ");
-        //System.out.println(linea);
-        //System.out.print("arr: ");
-        //System.out.println(Arrays.toString(arr));
-        //// String tipo = arr[0];
+        //Cream ambiental
+        ambiental = new Ambiental(Double.parseDouble(data.get("envtemp")));
         
-        //Reconocemos el tipo de dato entrante
-        /**
-        if(tipo.equals("a")){
-            double temperatura = Double.parseDouble(arr[1]);
-            double radiacion = Double.parseDouble(arr[2]);
-            String dirViento = arr[3];
-            double magViento = Double.parseDouble(arr[4]);
-            dato = new Ambiental(temperatura, radiacion, magViento, dirViento);
-        }else if(tipo.equals("p")){
-            double corriente = Double.parseDouble(arr[1])/10;
-            double voltaje = Double.parseDouble(arr[2])/10;
-            double potencia = Double.parseDouble(arr[3])/10;
-            dato = new Panel(corriente, voltaje, potencia);
-        }else if(tipo.equals("m")){
-            double corriente = Double.parseDouble(arr[1])/10;
-            double voltaje = Double.parseDouble(arr[2])/10;
-            double temperatura = Double.parseDouble(arr[3])/10;
-            dato = new Motor(corriente, voltaje, temperatura);
-        }else if(tipo.equals("b")){
-            double soc = Double.parseDouble(arr[1])/10;
-            double voltaje = Double.parseDouble(arr[2])/10;
-            double corriente = Double.parseDouble(arr[3])/10;
-            dato = new Bateria(soc, voltaje, corriente);
-        }else if(tipo.equals("g")){
-            double velocidad = Double.parseDouble(arr[1])/10;
-            double distancia = Double.parseDouble(arr[2])/10;
-            dato = new General(velocidad, distancia);
-        }
-        */
+        //Crear bateria
+        bateria = new Bateria(Double.parseDouble(data.get("cmutmax")), Double.parseDouble(data.get("socpercent")), Double.parseDouble(data.get("cellvmin")),
+            Double.parseDouble(data.get("cellvmax")), Double.parseDouble(data.get("celltmax")), Double.parseDouble(data.get("flagsb")), Double.parseDouble(data.get("pcbtemp0")),
+            Double.parseDouble(data.get("pcbtemp1")), Double.parseDouble(data.get("pcbtemp2")), Double.parseDouble(data.get("pcbtemp3")), Double.parseDouble(data.get("pcbtemp4")),
+            Double.parseDouble(data.get("celltemp0")), Double.parseDouble(data.get("celltemp1")), Double.parseDouble(data.get("celltemp2")),
+            Double.parseDouble(data.get("celltemp3")), Double.parseDouble(data.get("celltemp4")), Double.parseDouble(data.get("socma")), Double.parseDouble(data.get("voltage")),
+            Double.parseDouble(data.get("current")), Double.parseDouble(data.get("cvoltage0")), Double.parseDouble(data.get("cvoltage1")), Double.parseDouble(data.get("cvoltage2")),
+            Double.parseDouble(data.get("cvoltage3")), Double.parseDouble(data.get("cvoltage4")), Double.parseDouble(data.get("cvoltage5")),
+            Double.parseDouble(data.get("cvoltage6")), Double.parseDouble(data.get("cvoltage7")), Double.parseDouble(data.get("cvoltage8")),
+            Double.parseDouble(data.get("cvoltage9")), Double.parseDouble(data.get("cvoltage10")), Double.parseDouble(data.get("cvoltage11")),
+            Double.parseDouble(data.get("cvoltage12")), Double.parseDouble(data.get("cvoltage13")), Double.parseDouble(data.get("cvoltage14")),
+            Double.parseDouble(data.get("cvoltage15")), Double.parseDouble(data.get("cvoltage16")), Double.parseDouble(data.get("cvoltage17")),
+            Double.parseDouble(data.get("cvoltage18")), Double.parseDouble(data.get("cvoltage19")), Double.parseDouble(data.get("cvoltage20")),
+            Double.parseDouble(data.get("cvoltage21")), Double.parseDouble(data.get("cvoltage22")),Double.parseDouble(data.get("cvoltage23")),
+            Double.parseDouble(data.get("cvoltage24")), Double.parseDouble(data.get("cvoltage25")), Double.parseDouble(data.get("cvoltage26")),
+            Double.parseDouble(data.get("cvoltage27")), Double.parseDouble(data.get("cvoltage28")), Double.parseDouble(data.get("cvoltage29")),
+            Double.parseDouble(data.get("cvoltage30")), Double.parseDouble(data.get("cvoltage31")), Double.parseDouble(data.get("cvoltage32")),
+            Double.parseDouble(data.get("cvoltage33")));
+        
+        //Crear General
+        general = new General(Double.parseDouble(data.get("imuspeedgnd")), Double.parseDouble(data.get("imuyaw")), Double.parseDouble(data.get("imucourse")),
+            Double.parseDouble(data.get("imulongitude")), Double.parseDouble(data.get("imupitch")), Double.parseDouble(data.get("imulattitude")),
+            Double.parseDouble(data.get("imualttitude")), Double.parseDouble(data.get("imuroll")), Double.parseDouble(data.get("aux")));
+            
+        //Crear Motor
+        motor = new Motor(Double.parseDouble(data.get("railvoltageb")), Double.parseDouble(data.get("mcbuscurrent")), Double.parseDouble(data.get("mccurrentq")),
+            Double.parseDouble(data.get("mctorque")), Double.parseDouble(data.get("mcbusvoltage")), Double.parseDouble(data.get("mcrailvoltage")), 
+            Double.parseDouble(data.get("mcspeed")), Double.parseDouble(data.get("mcodo")), Double.parseDouble(data.get("mcrpm")), Double.parseDouble(data.get("mctemp")),
+            Double.parseDouble(data.get("mcws22temp")), Double.parseDouble(data.get("mcflags")));
+            
+        //CrearPanel
+        panel = new Panel(Double.parseDouble(data.get("mpptflagspanel0")), Double.parseDouble(data.get("mpptflagspanel1")), 
+            Double.parseDouble(data.get("mpptflagspanel2")), Double.parseDouble(data.get("mpptvin0")), Double.parseDouble(data.get("mpptvin1")),
+            Double.parseDouble(data.get("mpptvin2")), Double.parseDouble(data.get("mpptiin0")), Double.parseDouble(data.get("mpptiin1")), Double.parseDouble(data.get("mpptiin2")),
+            Double.parseDouble(data.get("mpptvout0")), Double.parseDouble(data.get("mpptvout1")), Double.parseDouble(data.get("mpptvout2")), 
+            Double.parseDouble(data.get("mpptiout0")), Double.parseDouble(data.get("mpptiout1")), Double.parseDouble(data.get("mpptiout2")), 
+            Double.parseDouble(data.get("tempint")), Double.parseDouble(data.get("currentint")));
+       
         almacenarDatos(ambiental,bateria,general,motor,panel);
     }
     
