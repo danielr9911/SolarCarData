@@ -25,11 +25,11 @@ public class Serial {
             {
                 SerialPort serialPort = (SerialPort) commPort;
                 serialPort.setSerialPortParams(38400,SerialPort.DATABITS_8,SerialPort.STOPBITS_1,SerialPort.PARITY_NONE);
-                System.out.println("InputStream");
+                //System.out.println("InputStream");
                 InputStream in = serialPort.getInputStream();
                 serialPort.addEventListener(new SerialReader(in));
                 serialPort.notifyOnDataAvailable(true);
-                System.out.println("Termina");
+                //System.out.println("Termina");
                 //OutputStream out = serialPort.getOutputStream();
                 //(new Thread(new SerialWriter(out))).start();
 

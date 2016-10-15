@@ -48,6 +48,7 @@ public class Interpretador {
         //Tenemos datos y orden llenos correctamente
         HashMap<String, String> data = new HashMap<>();
         for(int i=0; i<datos.length;i++){
+            //Se puede mejorar con Double.parseDouble(datos[i])
             data.put(orden[i], datos[i]);
         }
         
