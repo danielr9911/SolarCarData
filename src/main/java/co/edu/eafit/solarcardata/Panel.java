@@ -25,13 +25,16 @@ public class Panel extends Dato{
     public double mpptiout0;
     public double mpptiout1;
     public double mpptiout2;
+    public double tempint;
+    public double currentint;
             
             
     public Panel(double mpptflagspanel0, double mpptflagspanel1, 
             double mpptflagspanel2, double mpptvin0, double mpptvin1,
             double mpptvin2, double mpptiin0, double mpptiin1, double mpptiin2,
             double mpptvout0, double mpptvout1, double mpptvout2, 
-            double mpptiout0, double mpptiout1, double mpptiout2){
+            double mpptiout0, double mpptiout1, double mpptiout2, 
+            double tempint, double currentint){
         this.mpptflagspanel0 = mpptflagspanel0;
         this.mpptflagspanel1 = mpptflagspanel1;
         this.mpptflagspanel2 = mpptflagspanel2;
@@ -47,5 +50,8 @@ public class Panel extends Dato{
         this.mpptiout0 = mpptiout0;
         this.mpptiout1 = mpptiout1;
         this.mpptiout2 = mpptiout2;
+        this.tempint = tempint;
+        this.currentint = currentint;
         
+    }
 }
