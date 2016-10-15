@@ -38,27 +38,47 @@ public class Conexion {
             Point point1 = Point.measurement("Ambiental")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
                     .addField("temperatura", ((Ambiental) dato).temperatura)
-                    .addField("radiacion", ((Ambiental) dato).radiacion)
-                    .addField("dirViento", ((Ambiental) dato).dirViento)
-                    .addField("magViento", ((Ambiental) dato).magViento)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia ambiental");
         }else if(dato instanceof Panel){
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField("corriente", ((Panel) dato).corriente)
-                    .addField("voltaje", ((Panel) dato).voltaje)
-                    .addField("potencia", ((Panel) dato).potencia)
+                    .addField("mpptflagspanel0", ((Panel) dato).mpptflagspanel0)
+                    .addField("mpptflagspanel1", ((Panel) dato).mpptflagspanel1)
+                    .addField("mpptflagspanel2", ((Panel) dato).mpptflagspanel2)
+                    .addField("mpptvin0", ((Panel) dato).mpptvin0)
+                    .addField("mpptvin1", ((Panel) dato).mpptvin1)
+                    .addField("mpptvin2", ((Panel) dato).mpptvin2)
+                    .addField("mpptiin0", ((Panel) dato).mpptiin0)
+                    .addField("mpptiin1", ((Panel) dato).mpptiin1)
+                    .addField("mpptiin2", ((Panel) dato).mpptiin2)
+                    .addField("mpptvout0", ((Panel) dato).mpptvout0)
+                    .addField("mpptvout1", ((Panel) dato).mpptvout1)
+                    .addField("mpptvout2", ((Panel) dato).mpptvout2)
+                    .addField("mpptiout0", ((Panel) dato).mpptiout0)
+                    .addField("mpptiout1", ((Panel) dato).mpptiout1)
+                    .addField("mpptiout2", ((Panel) dato).mpptiout2)
+                    .addField("tempint", ((Panel) dato).tempint)
+                    .addField("currentint", ((Panel) dato).currentint)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia panel");
         }else if(dato instanceof Motor){
             Point point1 = Point.measurement("Motor")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField("corriente", ((Motor) dato).corriente)
-                    .addField("voltaje", ((Motor) dato).voltaje)
-                    .addField("temperatura", ((Motor) dato).temperatura)
+                    .addField("railvoltageb", ((Motor) dato).railvoltageb)
+                    .addField("mcbuscurrent", ((Motor) dato).mcbuscurrent)
+                    .addField("mccurrentq", ((Motor) dato).mccurrentq)
+                    .addField("mctorque", ((Motor) dato).mctorque)
+                    .addField("mcbusvoltage", ((Motor) dato).mcbusvoltage)
+                    .addField("mcrailvoltage", ((Motor) dato).mcrailvoltage)
+                    .addField("mcspeed", ((Motor) dato).mcspeed)
+                    .addField("mcodo", ((Motor) dato).mcodo)
+                    .addField("mcrpm", ((Motor) dato).mcrpm)
+                    .addField("mctemp", ((Motor) dato).mctemp)
+                    .addField("mcws22temp", ((Motor) dato).mcws22temp)
+                    .addField("mcflags", ((Motor) dato).mcflags)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia motor");
@@ -118,15 +138,21 @@ public class Conexion {
                     .addField("cvoltage31", ((Bateria) dato).cvoltage31)
                     .addField("cvoltage32", ((Bateria) dato).cvoltage32)
                     .addField("cvoltage33", ((Bateria) dato).cvoltage33)
-                    
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia bateria");
         }else if(dato instanceof General){
             Point point1 = Point.measurement("General")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField("velocidad", ((General) dato).velocidad)
-                    .addField("distancia", ((General) dato).distancia)
+                    .addField("imuspeedgnd", ((General) dato).imuspeedgnd)
+                    .addField("imuyaw", ((General) dato).imuyaw)
+                    .addField("imucourse", ((General) dato).imucourse)
+                    .addField("imulongitude", ((General) dato).imulongitude)
+                    .addField("imupitch", ((General) dato).imupitch)
+                    .addField("imulattitude", ((General) dato).imulattitude)
+                    .addField("imualttitude", ((General) dato).imualttitude)
+                    .addField("imuroll", ((General) dato).imuroll)
+                    .addField("aux", ((General) dato).aux)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia general");
