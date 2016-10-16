@@ -5,6 +5,12 @@
  */
 package co.edu.eafit.solarcardata;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Daniel
@@ -16,12 +22,30 @@ public class SolarCarData {
         serial.listarPuertos();
         //System.out.println("Puertos Disponibles:");
         //serial.puertosDisponibles();
+        
+        
+//        try {
+//            GeneradorDatos.generar();
+//        } catch (IOException ex) {
+//            Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+        
+       
         Conexion.conectar();
         try{
-            serial.conectar("COM8");
+        FileReader fr = new FileReader("puerto.conf");
+        BufferedReader bf = new BufferedReader(fr);
+        String puerto = bf.readLine();
+        bf.close();
+        serial.conectar(puerto);
         }catch ( Exception e ){
             // TODO Auto-gene-rated catch block
             e.printStackTrace();
         }
+        
+        
+
+        
+        
     }
 }
