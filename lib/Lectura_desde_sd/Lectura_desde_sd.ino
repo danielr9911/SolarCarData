@@ -1,28 +1,36 @@
+#include <SPI.h>
+#include <SD.h>
+
+File myFile;
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(38400);
+  //Serial.print("Initializing SD card...");
+
+  if (!SD.begin(4)) {
+    Serial.println("initialization failed!");
+    return;
+  }
+  //Serial.println("initialization done.");
+  // re-open the file for reading:
+  myFile = SD.open("datos.txt");
+  if (myFile) {
+    //Serial.println("test.txt:");
+
+    // read from the file until there's nothing else in it:
+    while (myFile.available()) {
+      Serial.write(myFile.read());
+      delay(2);
+    }
+    // close the file:
+    myFile.close();
+  } else {
+    // if the file didn't open, print an error:
+    Serial.println("error opening datos.txt");
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  Serial.println("a 123 456 NE 789");
-  delay(500);
-  Serial.println("p 987 654 321");
-  delay(500);
-  Serial.println("m 123 456 789");
-  delay(500);
-  Serial.println("b 789 456 123");
-  delay(500);
-  Serial.println("g 345 678");
-  delay(500);
-  Serial.println("a 321 654 SO 987");
-  delay(500);
-  Serial.println("p 789 456 123");
-  delay(500);
-  Serial.println("m 321 654 987");
-  delay(500);
-  Serial.println("b 987 654 321");
-  delay(500);
-  Serial.println("g 543 876");
-  delay(500);
+  // nothing happens after setup
 }
+

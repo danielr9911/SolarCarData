@@ -10,9 +10,9 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class Ambiental extends Dato{
-    public double temperatura;
+    public double envtemp;
     
-    public Ambiental(double temperatura){
-        this.temperatura = temperatura; 
+    public Ambiental(double envtemp){
+        this.envtemp = envtemp; 
     }
 }

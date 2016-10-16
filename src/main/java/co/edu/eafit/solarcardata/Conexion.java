@@ -37,7 +37,7 @@ public class Conexion {
         if(dato instanceof Ambiental){
             Point point1 = Point.measurement("Ambiental")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField("temperatura", ((Ambiental) dato).temperatura)
+                    .addField("envtemp", ((Ambiental) dato).envtemp)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia ambiental");

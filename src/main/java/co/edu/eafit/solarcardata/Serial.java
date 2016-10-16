@@ -66,7 +66,9 @@ public class Serial {
                 String linea = new String(buffer,0,len);
                 //Elimino el '\n' al final de la linea
                 linea = linea.substring(0, linea.length()-1);
+                //System.out.println(linea);
                 Interpretador.reconocer(linea);
+                
             }
             catch ( IOException e )
             {
