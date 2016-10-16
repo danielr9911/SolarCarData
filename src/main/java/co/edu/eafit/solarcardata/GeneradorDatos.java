@@ -28,7 +28,7 @@ public class GeneradorDatos {
         
         String linea;
         while((linea=bf.readLine())!=null){
-            String lineaNueva = linea + ",2.0,3.0,4.0,5.0,6.0";
+            String lineaNueva = linea + ",2.00,3.00,4.00";
             pw.println(lineaNueva);
             System.out.println(linea);
             System.out.println(lineaNueva);

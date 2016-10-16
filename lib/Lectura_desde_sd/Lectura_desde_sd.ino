@@ -13,7 +13,7 @@ void setup() {
   }
   //Serial.println("initialization done.");
   // re-open the file for reading:
-  myFile = SD.open("datos.txt");
+  myFile = SD.open("datoss.txt");
   if (myFile) {
     //Serial.println("test.txt:");
 

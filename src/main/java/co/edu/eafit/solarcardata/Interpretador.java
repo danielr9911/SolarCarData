@@ -46,25 +46,23 @@ public class Interpretador {
         }
         String[] datos = linea.split(",");
         //Tenemos datos y orden llenos correctamente
-        System.out.println("Orden:"+orden.length);
-        System.out.println("Datos:"+datos.length);
+//        System.out.println("Orden:"+orden.length);
+//        System.out.println("Datos:"+datos.length);
         HashMap<String, String> data = new HashMap<>();
         for(int i=0; i<datos.length;i++){
             //Se puede mejorar con Double.parseDouble(datos[i])
             data.put(orden[i], datos[i]);
         }
-        System.out.println("KeySet:"+data.keySet());
-        System.out.println("Data[0]:"+data.get("hhmmss"));
-        System.out.println("Data[96]:"+data.get("envtemp"));
+        //System.out.println("KeySet:"+data.keySet());
+        //System.out.println("Data[0]:"+data.get("hhmmss"));
+        //System.out.println("Data[96]:"+data.get("envtemp"));
 
-        System.out.println("Data:"+data.size());
+//        System.out.println("Data:"+data.size());
         
         //para sacar mvoltaje -> data.get("mvoltaje")      
         //Cream ambiental
         ambiental = new Ambiental(Double.parseDouble(data.get("envtemp")));
-        
         //Crear bateria
-        
         bateria = new Bateria(Double.parseDouble(data.get("cmutmax")), Double.parseDouble(data.get("socpercent")), Double.parseDouble(data.get("cellvmin")),
             Double.parseDouble(data.get("cellvmax")), Double.parseDouble(data.get("celltmax")), Double.parseDouble(data.get("flagsb")), Double.parseDouble(data.get("pcbtemp0")),
             Double.parseDouble(data.get("pcbtemp1")), Double.parseDouble(data.get("pcbtemp2")), Double.parseDouble(data.get("pcbtemp3")), Double.parseDouble(data.get("pcbtemp4")),
@@ -84,31 +82,32 @@ public class Interpretador {
             Double.parseDouble(data.get("cvoltage33")));
         
          //CrearPanel
+         
         panel = new Panel(Double.parseDouble(data.get("mpptflagspanel0")), Double.parseDouble(data.get("mpptflagspanel1")), 
             Double.parseDouble(data.get("mpptflagspanel2")), Double.parseDouble(data.get("mpptvin0")), Double.parseDouble(data.get("mpptvin1")),
             Double.parseDouble(data.get("mpptvin2")), Double.parseDouble(data.get("mpptiin0")), Double.parseDouble(data.get("mpptiin1")), Double.parseDouble(data.get("mpptiin2")),
             Double.parseDouble(data.get("mpptvout0")), Double.parseDouble(data.get("mpptvout1")), Double.parseDouble(data.get("mpptvout2")), 
             Double.parseDouble(data.get("mpptiout0")), Double.parseDouble(data.get("mpptiout1")), Double.parseDouble(data.get("mpptiout2")), 
             Double.parseDouble(data.get("tempint")), Double.parseDouble(data.get("currentint")));
-       
         //Crear Motor
+
         motor = new Motor(Double.parseDouble(data.get("railvoltageb")), Double.parseDouble(data.get("mcbuscurrent")), Double.parseDouble(data.get("mccurrentq")),
             Double.parseDouble(data.get("mctorque")), Double.parseDouble(data.get("mcbusvoltage")), Double.parseDouble(data.get("mcrailvoltage")), 
             Double.parseDouble(data.get("mcspeed")), Double.parseDouble(data.get("mcodo")), Double.parseDouble(data.get("mcrpm")), Double.parseDouble(data.get("mctemp")),
             Double.parseDouble(data.get("mcws22temp")), Double.parseDouble(data.get("mcflags")));
         
+
         //Crear General
+        
         general = new General(Double.parseDouble(data.get("imuspeedgnd")), Double.parseDouble(data.get("imuyaw")), Double.parseDouble(data.get("imucourse")),
             Double.parseDouble(data.get("imulongitude")), Double.parseDouble(data.get("imupitch")), Double.parseDouble(data.get("imulattitude")),
             Double.parseDouble(data.get("imualttitude")), Double.parseDouble(data.get("imuroll")), Double.parseDouble(data.get("aux")));
-        
-       
         //System.out.println("Llamo a almacenar datos");
         almacenarDatos(ambiental,bateria,general,motor,panel);
     }
     
     private static void almacenarDatos(Dato ambiental, Dato bateria, Dato general,Dato motor, Dato panel){
-        //System.out.println("Llego a almacenar datos");
+//        System.out.println("Llego a almacenar datos");
         if(ambiental != null){
             Conexion.guardar(ambiental);
         }else{

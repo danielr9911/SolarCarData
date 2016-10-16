@@ -35,6 +35,7 @@ public class Conexion {
     
     public static void guardar(Dato dato){
         if(dato instanceof Ambiental){
+//            System.out.println("Ambiental");
             Point point1 = Point.measurement("Ambiental")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
                     .addField("envtemp", ((Ambiental) dato).envtemp)
@@ -42,6 +43,7 @@ public class Conexion {
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia ambiental");
         }else if(dato instanceof Panel){
+//            System.out.println("Panel");
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
                     .addField("mpptflagspanel0", ((Panel) dato).mpptflagspanel0)

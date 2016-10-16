@@ -10,6 +10,8 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class General extends Dato{
+    //public double posvmax;
+    //public double posvmin;
     public double imuspeedgnd;
     public double imuyaw;
     public double imucourse;
