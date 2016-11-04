@@ -17,6 +17,12 @@ import java.util.logging.Logger;
  */
 public class SolarCarData {
     public static void main(String[] args){
+        String url = "http://localhost:3000/";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+        } catch (IOException ex) {
+            Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
+        }
         Serial serial = new Serial();
         System.out.println("Listar Puertos:");
         serial.listarPuertos();
