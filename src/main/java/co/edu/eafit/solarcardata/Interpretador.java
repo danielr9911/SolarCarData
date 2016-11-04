@@ -9,12 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  *
@@ -25,7 +20,8 @@ public class Interpretador {
     
     private static void verificarOrden() throws FileNotFoundException, IOException{
         FileReader fr = new FileReader("ordenDatos.conf");
-        BufferedReader bf = new BufferedReader(fr);
+        BufferedReader bf;
+        bf = new BufferedReader(fr);
         String configuracion = bf.readLine();
         //System.out.println(configuracion);
         bf.close();

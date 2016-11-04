@@ -17,26 +17,29 @@ import java.util.logging.Logger;
  */
 public class SolarCarData {
     public static void main(String[] args){
-        String url = "http://localhost:3000/";
+        //Comando cmd para ejecutar grafana
+        //start /B /D "Documents\GitHub\SolarCarData\grafana-3.1.1\bin" grafana-server.exe
+        //Comando cmd para ejecutar influxdb
+        //start /B /D "../../influxdb-1.0.0-1" influxd.exe
+        
         try {
+            //Ejecuta InfluxDB
+            String cmd1 = "cmd start /B /D \"../../influxdb-1.0.0-1\" influxd.exe";
+            Runtime.getRuntime().exec(cmd1); 
+            //Ejecuta Grafana-Server
+            String cmd2 = "cmd start /B /D \"Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\bin\" grafana-server.exe"; 
+            Runtime.getRuntime().exec(cmd2); 
+            //Abre la interfaz de grafana en el explorador
+            String url = "http://localhost:3000/";
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
             Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         Serial serial = new Serial();
         System.out.println("Listar Puertos:");
         serial.listarPuertos();
-        //System.out.println("Puertos Disponibles:");
-        //serial.puertosDisponibles();
-        
-        
-//        try {
-//            GeneradorDatos.generar();
-//        } catch (IOException ex) {
-//            Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-        
-       
+                     
         Conexion.conectar();
         try{
         FileReader fr = new FileReader("puerto.conf");
