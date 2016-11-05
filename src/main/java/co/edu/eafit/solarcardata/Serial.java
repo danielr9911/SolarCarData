@@ -6,7 +6,6 @@
 package co.edu.eafit.solarcardata;
 import gnu.io.*; 
 import java.io.*;
-import java.util.*;
 /**
  *
  * @author Daniel
@@ -42,14 +41,15 @@ public class Serial {
     }
     private class SerialReader implements SerialPortEventListener 
     {
-        private InputStream in;
-        private byte[] buffer = new byte[1024];
+        private final InputStream in;
+        private final byte[] buffer = new byte[1024];
         
         public SerialReader ( InputStream in )
         {
             this.in = in;
         }
         
+        @Override
         public void serialEvent(SerialPortEvent arg0) {
             int data;
           
@@ -73,7 +73,6 @@ public class Serial {
             catch ( IOException e )
             {
                 e.printStackTrace();
-                System.exit(-1);
             }             
         }
 

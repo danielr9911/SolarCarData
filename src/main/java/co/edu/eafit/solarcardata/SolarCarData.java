@@ -27,12 +27,14 @@ public class SolarCarData {
             String cmd1 = "cmd start /B /D \"../../influxdb-1.0.0-1\" influxd.exe";
             Runtime.getRuntime().exec(cmd1); 
             //Ejecuta Grafana-Server
-            String cmd2 = "cmd start /B /D \"Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\bin\" grafana-server.exe"; 
+            String cmd2 = "cmd start /B /D \"Documents/GitHub/SolarCarData/grafana-3.1.1/bin\" grafana-server.exe"; 
             Runtime.getRuntime().exec(cmd2); 
             //Abre la interfaz de grafana en el explorador
             String url = "http://localhost:3000/";
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
+            System.exit(1);
+            System.err.println("No se pudo ejecutar influxdb o grafana");
             Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -42,19 +44,14 @@ public class SolarCarData {
                      
         Conexion.conectar();
         try{
-        FileReader fr = new FileReader("puerto.conf");
-        BufferedReader bf = new BufferedReader(fr);
-        String puerto = bf.readLine();
-        bf.close();
-        serial.conectar(puerto);
+            FileReader fr = new FileReader("puerto.conf");
+            BufferedReader bf;
+            bf = new BufferedReader(fr);
+            String puerto = bf.readLine();
+            bf.close();
+            serial.conectar(puerto);
         }catch ( Exception e ){
-            // TODO Auto-gene-rated catch block
-            e.printStackTrace();
+            Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, e);
         }
-        
-        
-
-        
-        
     }
 }
