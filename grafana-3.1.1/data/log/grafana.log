@@ -2044,3 +2044,81 @@ t=2016-11-05T13:49:00-0500 lvl=info msg="Server Listening" logger=server address
 t=2016-11-05T13:49:00-0500 lvl=eror msg="Fail to start server" logger=server error="listen tcp 0.0.0.0:3000: bind: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)"
 t=2016-11-05T13:49:00-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=9ns size=29
 t=2016-11-05T13:49:00-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=8ns size=24
+t=2016-11-05T13:58:21-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=6ns size=29
+t=2016-11-05T13:58:21-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=5ns size=24
+t=2016-11-05T14:36:54-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:36:54-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:36:54-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:36:54-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:36:54-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:36:54-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:36:54-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:36:54-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:36:54-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:36:54-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-05T14:36:59-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=9ns size=29
+t=2016-11-05T14:37:01-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=4ns size=24
+t=2016-11-05T14:41:42-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:41:42-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:41:42-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:41:42-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:41:42-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:41:42-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:41:42-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:41:42-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:41:42-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:41:42-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-05T14:41:42-0500 lvl=eror msg="Fail to start server" logger=server error="listen tcp 0.0.0.0:3000: bind: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)"
+t=2016-11-05T14:44:46-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:44:46-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:44:46-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:44:46-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:44:46-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:44:46-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:44:46-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:44:46-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:44:46-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:44:46-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-05T14:45:15-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:45:15-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:45:15-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:45:15-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:45:15-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:45:15-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:45:15-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:45:15-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:45:15-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:45:15-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-05T14:45:15-0500 lvl=eror msg="Fail to start server" logger=server error="listen tcp 0.0.0.0:3000: bind: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)"
+t=2016-11-05T14:46:50-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:46:50-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:46:50-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:46:50-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:46:50-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:46:50-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:46:50-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:46:50-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:46:50-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:46:50-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-05T14:47:37-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-05T14:47:37-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-05T14:47:37-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-05T14:47:37-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-05T14:47:37-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-05T14:47:37-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-05T14:47:37-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-05T14:47:37-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-05T14:47:37-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-05T14:47:37-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-06T14:54:49-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-06T14:54:49-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-06T14:54:49-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-06T14:54:49-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-06T14:54:49-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-06T14:54:49-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-06T14:54:49-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-06T14:54:49-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-06T14:54:49-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-06T14:54:49-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-06T14:54:53-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=553ns size=29
+t=2016-11-06T14:54:54-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=673ns size=24

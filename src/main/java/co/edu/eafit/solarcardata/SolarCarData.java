@@ -39,11 +39,11 @@ public class SolarCarData {
         try {
             //Ejecuta InfluxDB
             //String cmd1 = "cmd /c start /D \"../../influxdb-1.0.0-1\" influxd.exe";
-            String cmd1 = "cmd /c start /B /D \"../../../../../influxdb-1.0.0-1\" influxd.exe";
+            String cmd1 = "cmd /c start /D \"../../../../../influxdb-1.0.0-1\" influxd.exe";
             Runtime.getRuntime().exec(cmd1); 
             //Ejecuta Grafana-Server
             //String cmd2 = "cmd /c start /D \"Documents/GitHub/SolarCarData/grafana-3.1.1/bin\" grafana-server.exe"; 
-            String cmd2 = "cmd /c start /B /D \"grafana-3.1.1\\bin\" grafana-server.exe"; 
+            String cmd2 = "cmd /c start /D \"grafana-3.1.1\\bin\" grafana-server.exe"; 
             Runtime.getRuntime().exec(cmd2); 
             //Abre la interfaz de grafana en el explorador
             String url = "http://localhost:3000/";
