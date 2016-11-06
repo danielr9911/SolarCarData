@@ -2122,3 +2122,36 @@ t=2016-11-06T14:54:49-0500 lvl=info msg="Starting plugin search" logger=plugins
 t=2016-11-06T14:54:49-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
 t=2016-11-06T14:54:53-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=553ns size=29
 t=2016-11-06T14:54:54-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=673ns size=24
+t=2016-11-06T15:36:10-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-06T15:36:10-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-06T15:36:10-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-06T15:36:10-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-06T15:36:10-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-06T15:36:10-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-06T15:36:10-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-06T15:36:10-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-06T15:36:10-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-06T15:36:10-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-06T15:36:11-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=5ns size=29
+t=2016-11-06T15:36:11-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=3ns size=24
+t=2016-11-06T15:37:24-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-06T15:37:24-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-06T15:37:24-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-06T15:37:24-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-06T15:37:24-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-06T15:37:24-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-06T15:37:24-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-06T15:37:24-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-06T15:37:24-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-06T15:37:24-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-06T15:43:49-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-06T15:43:49-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-06T15:43:49-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-06T15:43:49-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-06T15:43:49-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Daniela\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-06T15:43:49-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-06T15:43:49-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-06T15:43:49-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-06T15:43:49-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-06T15:43:49-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-06T15:43:49-0500 lvl=eror msg="Fail to start server" logger=server error="listen tcp 0.0.0.0:3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
