@@ -2262,3 +2262,34 @@ t=2016-11-08T13:33:39-0500 lvl=info msg="Starting plugin search" logger=plugins
 t=2016-11-08T13:33:40-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
 t=2016-11-08T13:35:29-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=10ns size=29
 t=2016-11-08T13:35:29-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=3ns size=24
+t=2016-11-08T14:02:08-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=2ns size=19
+t=2016-11-08T14:06:03-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=6ns size=93
+t=2016-11-08T14:06:04-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=71ns size=93
+t=2016-11-08T14:06:05-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=22ns size=93
+t=2016-11-08T14:06:05-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=10ns size=93
+t=2016-11-08T14:06:06-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=70ns size=93
+t=2016-11-08T14:06:06-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=8ns size=93
+t=2016-11-08T14:10:44-0500 lvl=eror msg="Failed to send email invite" logger=context userId=2 orgId=2 uname=drendon9 error="Grafana mailing/smtp options not configured, contact your Grafana admin"
+t=2016-11-08T14:10:44-0500 lvl=eror msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/org/invites status=500 remote_addr=[::1] time_ns=21ns size=41
+t=2016-11-08T14:11:55-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logout status=302 remote_addr=[::1] time_ns=2ns size=29
+t=2016-11-08T14:12:06-0500 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="Invalid Username or Password"
+t=2016-11-08T14:12:06-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ns=4ns size=42
+t=2016-11-08T14:12:06-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ns=1ns size=26
+t=2016-11-08T14:12:14-0500 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="Invalid Username or Password"
+t=2016-11-08T14:12:14-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ns=4ns size=42
+t=2016-11-08T14:12:14-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ns=56ns size=26
+t=2016-11-08T14:12:16-0500 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="Invalid Username or Password"
+t=2016-11-08T14:12:16-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ns=3ns size=42
+t=2016-11-08T14:12:16-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ns=2ns size=26
+t=2016-11-08T14:12:30-0500 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="Invalid Username or Password"
+t=2016-11-08T14:12:30-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ns=4ns size=42
+t=2016-11-08T14:12:30-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ns=3ns size=26
+t=2016-11-08T14:13:24-0500 lvl=info msg="Request Completed" logger=context userId=3 orgId=1 uname=lmejiav6@eafit.edu.co method=GET path=/logout status=302 remote_addr=[::1] time_ns=1ns size=29
+t=2016-11-08T14:14:03-0500 lvl=eror msg="Failed to send email invited_to_org" logger=context userId=2 orgId=2 uname=drendon9 error="Grafana mailing/smtp options not configured, contact your Grafana admin"
+t=2016-11-08T14:14:03-0500 lvl=eror msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/org/invites status=500 remote_addr=[::1] time_ns=64ns size=49
+t=2016-11-08T14:14:08-0500 lvl=eror msg="User lmejiav6@eafit.edu.co is already added to organization" logger=context userId=2 orgId=2 uname=drendon9 error="User is already added to organization"
+t=2016-11-08T14:14:08-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/org/invites status=412 remote_addr=[::1] time_ns=4ns size=73
+t=2016-11-08T14:14:20-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/logout status=302 remote_addr=[::1] time_ns=6ns size=29
+t=2016-11-08T14:14:34-0500 lvl=info msg="Request Completed" logger=context userId=3 orgId=1 uname=lmejiav6@eafit.edu.co method=GET path=/profile/switch-org/2 status=302 remote_addr=[::1] time_ns=21ns size=24
+t=2016-11-08T14:15:10-0500 lvl=info msg="Request Completed" logger=context userId=3 orgId=2 uname=lmejiav6@eafit.edu.co method=GET path=/logout status=302 remote_addr=[::1] time_ns=3ns size=29
+t=2016-11-08T14:37:10-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=2ns size=19
