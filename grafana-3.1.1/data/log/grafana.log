@@ -145,3 +145,9 @@ t=2016-11-11T11:28:40-0500 lvl=info msg="Request Completed" logger=context userI
 t=2016-11-11T11:30:50-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=4ns size=103
 t=2016-11-11T11:30:51-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=10ns size=103
 t=2016-11-11T11:30:52-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=3ns size=103
+t=2016-11-11T12:00:46-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=14ns size=103
+t=2016-11-11T12:04:28-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=6ns size=103
+t=2016-11-11T12:07:08-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=5ns size=103
+t=2016-11-11T12:08:48-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=17ns size=103
+t=2016-11-11T12:10:27-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=4ns size=103
+t=2016-11-11T12:12:39-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=5ns size=103
