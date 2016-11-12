@@ -18,45 +18,42 @@ import java.util.HashMap;
  */
 public class Interpretador {
     public static String[] orden = null;
+    public static boolean verificado = false;
     
     private static void verificarOrden() throws FileNotFoundException, IOException{
+        verificado=true;
         FileReader fr = new FileReader("ordenDatosCorrecto.conf");
         BufferedReader bf;
         bf = new BufferedReader(fr);
         String configuracion = bf.readLine();
-        //System.out.println(configuracion);
         bf.close();
         orden = configuracion.split(",");
     }
     
     public static void reconocer(String linea){
-        System.out.println("Entro a Interpretador.reconocer");
         Dato ambiental = null;
         Dato bateria = null;
         Dato general = null;
         Dato motor = null;
         Dato panel = null;
-        try{
-            verificarOrden();
-            System.out.println("odenDatos.conf leido correctamente");
-        }catch(Exception e){
-            e.printStackTrace();
+        if(!verificado){
+            try{
+                verificarOrden();
+                System.out.println("odenDatos.conf leido correctamente");
+            }catch(Exception e){
+               e.printStackTrace();
+            }
         }
         String[] datos = linea.split(",");
-        //Tenemos datos y orden llenos correctamente
-        System.out.println("Orden:"+orden.length);
-        System.out.println("Datos:"+datos.length);
         HashMap<String, String> data = new HashMap<>();
         for(int i=0; i<datos.length;i++){
             //Se puede mejorar con Double.parseDouble(datos[i])
             data.put(orden[i], datos[i]);
         }
+        //System.out.println("Orden:"+orden.length);
+        //System.out.println("Datos:"+datos.length);
         //System.out.println("KeySet:"+data.keySet());
-        //System.out.println("Data[0]:"+data.get("hhmmss"));
-        //System.out.println("Data[96]:"+data.get("envtemp"));
-
         //System.out.println("Data:"+data.size());
-        
         //para sacar mvoltaje -> data.get("mvoltaje")      
 
         //Crear bateria
@@ -79,7 +76,6 @@ public class Interpretador {
             Double.parseDouble(data.get("cvoltage33")));
         
          //CrearPanel
-         
         panel = new Panel(Double.parseDouble(data.get("mpptflagspanel0")), Double.parseDouble(data.get("mpptflagspanel1")), 
             Double.parseDouble(data.get("mpptflagspanel2")), Double.parseDouble(data.get("mpptvin0")), Double.parseDouble(data.get("mpptvin1")),
             Double.parseDouble(data.get("mpptvin2")), Double.parseDouble(data.get("mpptiin0")), Double.parseDouble(data.get("mpptiin1")), Double.parseDouble(data.get("mpptiin2")),
@@ -94,22 +90,14 @@ public class Interpretador {
             Double.parseDouble(data.get("mcws22temp")), Double.parseDouble(data.get("mcflags")));
 
         //Crear General
-        System.out.println("Entro a crear general");
         general = new General(Double.parseDouble(data.get("posvmax")), Double.parseDouble(data.get("posvmin")), Double.parseDouble(data.get("imuspeedgnd")), Double.parseDouble(data.get("imuyaw")), Double.parseDouble(data.get("imucourse")),
             Double.parseDouble(data.get("imulongitude")), Double.parseDouble(data.get("imupitch")), Double.parseDouble(data.get("imulattitude")),
             Double.parseDouble(data.get("imualttitude")), Double.parseDouble(data.get("imuroll")));
-        System.out.println("Salgo de crear general");
-        //System.out.println("Llamo a almacenar datos");
+       
         almacenarDatos(ambiental,bateria,general,motor,panel);
     }
     
     private static void almacenarDatos(Dato ambiental, Dato bateria, Dato general,Dato motor, Dato panel){
-//        System.out.println("Llego a almacenar datos");
-        if(ambiental != null){
-            Conexion.guardar(ambiental);
-        }else{
-            System.out.println("Dato ambiental no encontrado");
-        }
         if(bateria != null){
             Conexion.guardar(bateria);
         }else{

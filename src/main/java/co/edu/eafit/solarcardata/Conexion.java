@@ -65,6 +65,7 @@ public class Conexion {
                     .addField("mctemp", ((Motor) dato).mctemp)
                     .addField("mcws22temp", ((Motor) dato).mcws22temp)
                     .addField("mcflags", ((Motor) dato).mcflags)
+                    .addField("disrest", ((Motor) dato).disrest)                    
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia motor");

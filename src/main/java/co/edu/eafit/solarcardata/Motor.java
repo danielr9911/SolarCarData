@@ -24,7 +24,7 @@ public class Motor extends Dato{
     //temperatura variador
     public double mcws22temp;
     public double mcflags;
-            
+    public double disrest;
            
     public Motor(double railvoltageb, double mcbuscurrent, double mccurrentq,
             double mctorque, double mcbusvoltage, double mcrailvoltage, 
@@ -42,7 +42,6 @@ public class Motor extends Dato{
         this.mctemp = mctemp;
         this.mcws22temp = mcws22temp;
         this.mcflags = mcflags;
-        
-          
+        this.disrest=3000.0-mcodo;
     }
 }
