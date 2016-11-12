@@ -1,13 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Proyecto Solar Car Data
+ * Proyecto Integrador 1
+ * Universidad EAFIT
  */
 package co.edu.eafit.solarcardata;
 
 /**
- *
- * @author Daniel
+ * Dato - Bateria
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class Bateria extends Dato{
     public double cmutmax;
@@ -63,8 +65,6 @@ public class Bateria extends Dato{
     public double cvoltage31;
     public double cvoltage32;
     public double cvoltage33;
-    
-    
     
     public Bateria(double cmutmax, double socpercent, double cellvmin,
             double cellvmax, double celltmax, double flagsb, double pcbtemp0,
@@ -136,6 +136,5 @@ public class Bateria extends Dato{
         this.cvoltage31 = cvoltage31;
         this.cvoltage32 = cvoltage32;
         this.cvoltage33 = cvoltage33;
-        
     }
 }

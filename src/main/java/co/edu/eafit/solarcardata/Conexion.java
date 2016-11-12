@@ -25,6 +25,7 @@ public class Conexion {
         System.out.println("Connecting..");
     }
     
+    //Borrar
     public void ingresarDato(String tabla, String nCampo1, float vCampo1){
         Point point1 = Point.measurement(tabla)
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -34,15 +35,8 @@ public class Conexion {
     }
     
     public static void guardar(Dato dato){
-        if(dato instanceof Ambiental){
-//            System.out.println("Ambiental");
-            Point point1 = Point.measurement("Ambiental")
-                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField("envtemp", ((Ambiental) dato).envtemp)
-                    .build();
-            influxDB.write(dbName, "autogen", point1);
-            System.out.println("Se encontro intancia ambiental");
-        }else if(dato instanceof Panel){
+        
+        if(dato instanceof Panel){
 //            System.out.println("Panel");
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
@@ -61,7 +55,6 @@ public class Conexion {
                     .addField("mpptiout0", ((Panel) dato).mpptiout0)
                     .addField("mpptiout1", ((Panel) dato).mpptiout1)
                     .addField("mpptiout2", ((Panel) dato).mpptiout2)
-                    .addField("tempint", ((Panel) dato).tempint)
                     .addField("currentint", ((Panel) dato).currentint)
                     .build();
             influxDB.write(dbName, "autogen", point1);
@@ -146,6 +139,8 @@ public class Conexion {
         }else if(dato instanceof General){
             Point point1 = Point.measurement("General")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                    .addField("imuspeedgnd", ((General) dato).posvmax)
+                    .addField("imuspeedgnd", ((General) dato).posvmin)
                     .addField("imuspeedgnd", ((General) dato).imuspeedgnd)
                     .addField("imuyaw", ((General) dato).imuyaw)
                     .addField("imucourse", ((General) dato).imucourse)
@@ -154,7 +149,6 @@ public class Conexion {
                     .addField("imulattitude", ((General) dato).imulattitude)
                     .addField("imualttitude", ((General) dato).imualttitude)
                     .addField("imuroll", ((General) dato).imuroll)
-                    .addField("aux", ((General) dato).aux)
                     .build();
             influxDB.write(dbName, "autogen", point1);
             System.out.println("Se encontro intancia general");

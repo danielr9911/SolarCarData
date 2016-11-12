@@ -13,9 +13,9 @@ void setup() {
   }
   //Serial.println("initialization done.");
   // re-open the file for reading:
-  myFile = SD.open("datoss.txt");
+  myFile = SD.open("datosR.txt");
   if (myFile) {
-    //Serial.println("test.txt:");
+    //Serial.println("datosR.txt:");
 
     // read from the file until there's nothing else in it:
     while (myFile.available()) {
@@ -26,7 +26,7 @@ void setup() {
     myFile.close();
   } else {
     // if the file didn't open, print an error:
-    Serial.println("error opening datos.txt");
+    Serial.println("error opening datosR.txt");
   }
 }
 

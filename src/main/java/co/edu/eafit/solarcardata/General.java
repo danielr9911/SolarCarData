@@ -10,8 +10,8 @@ package co.edu.eafit.solarcardata;
  * @author Daniel
  */
 public class General extends Dato{
-    //public double posvmax;
-    //public double posvmin;
+    public double posvmax;
+    public double posvmin;
     public double imuspeedgnd;
     public double imuyaw;
     public double imucourse;
@@ -20,18 +20,20 @@ public class General extends Dato{
     public double imulattitude;
     public double imualttitude;
     public double imuroll;
-    public double aux;
     
-    public General(double imuspeedgnd, double imuyaw, double imucourse,
-            double imulongitude, double imupitch, double imulattitude,
-            double imualttitude, double imuroll, double aux){
+    public General(double posvmax, double posvmin, double imuspeedgnd,
+            double imuyaw, double imucourse, double imulongitude,
+            double imupitch, double imulattitude,
+            double imualttitude, double imuroll){
+        this.posvmax=posvmax;
+        this.posvmin=posvmin;
         this.imuspeedgnd = imuspeedgnd;
         this.imuyaw = imuyaw;
         this.imucourse = imucourse;
         this.imulongitude = imulongitude;
+        this.imupitch=imupitch;
         this.imulattitude = imulattitude;
         this.imualttitude = imualttitude;
         this.imuroll = imuroll;
-        this.aux = aux;
     }
 }
