@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Proyecto Solar Car Data
+ * Proyecto Integrador 1
+ * Universidad EAFIT
+ * 2016
  */
 package co.edu.eafit.solarcardata;
 
@@ -12,8 +13,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author Daniel
+ * Solar Car Data
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class SolarCarData {
     public static void main(String[] args){
@@ -25,31 +28,35 @@ public class SolarCarData {
             //Ejecuta InfluxDB
             String cmd1 = "cmd /c start /D \"..\\..\\..\\..\\..\\influxdb-1.0.0-1\" influxd.exe";
             Runtime.getRuntime().exec(cmd1); 
-            //Ejecuta Grafana-Server
+            //Ejecuta Grafana
             String cmd2 = "cmd /c start /D \"grafana-3.1.1\\bin\" grafana-server.exe"; 
             Runtime.getRuntime().exec(cmd2); 
-            //Abre la interfaz de grafana en el explorador
+            //Abre la interfaz grafica de grafana en el explorador
             String url = "http://localhost:3000/";
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
-            System.err.println("No se pudo ejecutar influxdb o grafana");
+            System.err.println("No se pudo ejecutar influxdb o grafana correctamente");
             Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        //Lista los puertos disponibles
         Serial serial = new Serial();
         System.out.println("Listar Puertos:");
         serial.listarPuertos();
-                     
+        
+        //Realiza la conexion con InfluxDB
         Conexion.conectar();
+        
+        //Realiza la conexion con el puerto serial indicado en el archivo puerto.conf
         try{
             FileReader fr = new FileReader("puerto.conf");
             BufferedReader bf;
             bf = new BufferedReader(fr);
             String puerto = bf.readLine();
             bf.close();
-            System.out.println("Conectando con puerto serial");
             serial.conectar(puerto);
         }catch ( Exception e ){
+            System.err.println("No se pudo realizar la conexion con el puerto serial");
             Logger.getLogger(SolarCarData.class.getName()).log(Level.SEVERE, null, e);
         }
     }

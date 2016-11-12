@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Proyecto Solar Car Data
+ * Proyecto Integrador 1
+ * Universidad EAFIT
+ * 2016
  */
 package co.edu.eafit.solarcardata;
 import java.util.concurrent.TimeUnit;
@@ -25,19 +26,9 @@ public class Conexion {
         System.out.println("Connecting..");
     }
     
-    //Borrar
-    public void ingresarDato(String tabla, String nCampo1, float vCampo1){
-        Point point1 = Point.measurement(tabla)
-                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .addField(nCampo1, vCampo1)
-                    .build();
-        influxDB.write(dbName, "autogen", point1);
-    }
-    
     public static void guardar(Dato dato){
         
         if(dato instanceof Panel){
-//            System.out.println("Panel");
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
                     .addField("mpptflagspanel0", ((Panel) dato).mpptflagspanel0)

@@ -2,11 +2,13 @@
  * Proyecto Solar Car Data
  * Proyecto Integrador 1
  * Universidad EAFIT
+ * 2016
  */
 package co.edu.eafit.solarcardata;
 
 /**
  * Dato - Bateria
+ * Contiene las variables correspondientes a la bateria del vehiculo solar. 
  * @author Daniel Rendon
  * @author Laura Mejia
  * @author Daniela Serna

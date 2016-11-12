@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Proyecto Solar Car Data
+ * Proyecto Integrador 1
+ * Universidad EAFIT
+ * 2016
  */
 package co.edu.eafit.solarcardata;
 
