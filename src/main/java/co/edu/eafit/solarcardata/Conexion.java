@@ -10,8 +10,11 @@ import org.influxdb.InfluxDB;
 import org.influxdb.InfluxDBFactory;
 import org.influxdb.dto.Point;
 /**
- *
- * @author Daniel
+ * Conexion
+ * Realiza la conexion con InfluxDB para almacenar los datos en esta.
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class Conexion {
     private static InfluxDB influxDB;
@@ -27,7 +30,6 @@ public class Conexion {
     }
     
     public static void guardar(Dato dato){
-        
         if(dato instanceof Panel){
             Point point1 = Point.measurement("Panel")
                     .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)

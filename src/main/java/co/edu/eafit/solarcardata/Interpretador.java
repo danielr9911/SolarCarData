@@ -13,8 +13,11 @@ import java.io.IOException;
 import java.util.HashMap;
 
 /**
- *
- * @author Daniel
+ * Interpretador
+ * Interpreta y clasifica cada dato para facilitar su manejo.
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class Interpretador {
     public static String[] orden = null;

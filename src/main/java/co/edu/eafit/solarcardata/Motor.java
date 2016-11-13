@@ -7,8 +7,11 @@
 package co.edu.eafit.solarcardata;
 
 /**
- *
- * @author Daniel
+ * Dato - Motor
+ * Contiene las variables correspondientes al motor del vehiculo solar. 
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class Motor extends Dato{
     public double railvoltageb;

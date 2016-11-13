@@ -7,8 +7,11 @@
 package co.edu.eafit.solarcardata;
 
 /**
- *
- * @author Daniel
+ * Dato 
+ * Clase padre que sirve para generalizar los distintos tipos de datos. 
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public abstract class Dato {
     

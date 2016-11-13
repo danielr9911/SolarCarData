@@ -7,8 +7,11 @@
 package co.edu.eafit.solarcardata;
 
 /**
- *
- * @author Daniel
+ * Dato - Panel
+ * Contiene las variables correspondientes al panel del vehiculo solar. 
+ * @author Daniel Rendon
+ * @author Laura Mejia
+ * @author Daniela Serna
  */
 public class Panel extends Dato{
     public double mpptflagspanel0;
@@ -27,8 +30,7 @@ public class Panel extends Dato{
     public double mpptiout1;
     public double mpptiout2;
     public double currentint;
-            
-            
+                
     public Panel(double mpptflagspanel0, double mpptflagspanel1, 
             double mpptflagspanel2, double mpptvin0, double mpptvin1,
             double mpptvin2, double mpptiin0, double mpptiin1, double mpptiin2,
@@ -50,6 +52,5 @@ public class Panel extends Dato{
         this.mpptiout1 = mpptiout1;
         this.mpptiout2 = mpptiout2;
         this.currentint = currentint;
-        
     }
 }
