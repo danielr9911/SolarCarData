@@ -7806,3 +7806,32 @@ t=2016-11-16T19:31:36-0500 lvl=info msg="Request Completed" logger=context userI
 t=2016-11-16T19:31:39-0500 lvl=eror msg="Invalid username or password" logger=context userId=0 orgId=0 uname= error="Invalid Username or Password"
 t=2016-11-16T19:31:39-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/login status=401 remote_addr=[::1] time_ns=44ns size=42
 t=2016-11-16T19:31:39-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ns=1ns size=26
+t=2016-11-16T19:37:52-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-16T19:37:52-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-16T19:37:52-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-16T19:37:52-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-16T19:37:52-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-16T19:37:52-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-16T19:37:52-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-16T19:37:52-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-16T19:37:52-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-16T19:37:52-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-16T19:38:56-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=2ns size=19
+t=2016-11-16T20:10:06-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=9ns size=103
+t=2016-11-16T20:10:07-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=9ns size=103
+t=2016-11-16T20:10:08-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=18ns size=103
+t=2016-11-16T20:10:09-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=17ns size=103
+t=2016-11-16T21:01:03-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=7ns size=103
+t=2016-11-16T21:01:04-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=9ns size=103
+t=2016-11-16T21:01:05-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=16ns size=103
+t=2016-11-16T21:01:06-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=14ns size=103
+t=2016-11-16T21:12:11-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=9ns size=92
+t=2016-11-16T21:12:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=66ns size=92
+t=2016-11-16T21:12:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=26ns size=92
+t=2016-11-16T21:12:13-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=41ns size=92
+t=2016-11-16T21:36:48-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=104ns size=88
+t=2016-11-16T21:36:48-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=38ns size=88
+t=2016-11-16T21:36:51-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=18ns size=88
+t=2016-11-16T21:37:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=43ns size=88
+t=2016-11-16T21:37:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=51ns size=88
+t=2016-11-16T21:37:15-0500 lvl=eror msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=500 remote_addr=[::1] time_ns=65ns size=0
