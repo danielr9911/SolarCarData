@@ -7835,3 +7835,38 @@ t=2016-11-16T21:36:51-0500 lvl=info msg="Request Completed" logger=context userI
 t=2016-11-16T21:37:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=43ns size=88
 t=2016-11-16T21:37:12-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=POST path=/api/dashboards/db/ status=412 remote_addr=[::1] time_ns=51ns size=88
 t=2016-11-16T21:37:15-0500 lvl=eror msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=500 remote_addr=[::1] time_ns=65ns size=0
+t=2016-11-17T08:58:25-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-17T08:58:25-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-17T08:58:26-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-17T08:58:26-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-17T08:58:26-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-17T08:58:26-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-17T08:58:26-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-17T08:58:26-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-17T08:58:26-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-17T08:58:26-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-17T08:58:27-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ns=358ns size=29
+t=2016-11-17T08:58:27-0500 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ns=130ns size=24
+t=2016-11-17T08:59:08-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=33ns size=19
+t=2016-11-17T09:04:44-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=6ns size=103
+t=2016-11-17T09:04:45-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=19ns size=103
+t=2016-11-17T09:10:54-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=5ns size=103
+t=2016-11-17T09:10:55-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=18ns size=103
+t=2016-11-17T09:10:56-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=16ns size=103
+t=2016-11-17T09:10:57-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=24ns size=103
+t=2016-11-17T09:19:57-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=3ns size=103
+t=2016-11-17T09:19:58-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=12ns size=103
+t=2016-11-17T09:19:59-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=18ns size=103
+t=2016-11-17T09:20:00-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/query status=400 remote_addr=[::1] time_ns=14ns size=103
+t=2016-11-17T09:39:17-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=7ns size=19
+t=2016-11-17T10:05:34-0500 lvl=info msg="Starting Grafana" logger=main version=3.1.1 commit=v3.1.0+19-ga4d2708 compiled=2016-08-01T05:20:16-0500
+t=2016-11-17T10:05:34-0500 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1/conf/defaults.ini
+t=2016-11-17T10:05:34-0500 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1
+t=2016-11-17T10:05:34-0500 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data
+t=2016-11-17T10:05:34-0500 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Lenovo\\Documents\\GitHub\\SolarCarData\\grafana-3.1.1\\data\\log
+t=2016-11-17T10:05:34-0500 lvl=info msg="Path Plugins" logger=settings path=data/plugins
+t=2016-11-17T10:05:34-0500 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-11-17T10:05:34-0500 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-11-17T10:05:34-0500 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-11-17T10:05:34-0500 lvl=info msg="Server Listening" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-11-17T10:06:27-0500 lvl=info msg="Request Completed" logger=context userId=2 orgId=2 uname=drendon9 method=GET path=/img/critical.svg status=404 remote_addr=[::1] time_ns=2ns size=19
